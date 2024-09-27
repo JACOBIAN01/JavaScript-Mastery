@@ -1,0 +1,51 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+     background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+ }
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+    height: auto;
+    margin-left: 22px;
+}
+.box{
+    background-color:blanchedalmond;
+    border: 2px;
+    border-radius: 10px;
+    border-color: azure;
+    width: 300px;
+    height: auto;
+}
+
+
+ input {
+     padding: 10px;
+     margin: 5px;
+     border-radius: 15px;
+ }
+
+ button {
+    border-radius: 20px;
+     padding: 10px 20px;
+     margin-top: 10px;
+     cursor: pointer;
+ }
+ .Tip{
+    text-align: center;
+    display: block;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+ }
+ 
