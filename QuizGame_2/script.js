@@ -39,7 +39,7 @@ function NextQ(){
    const userAnswer = AnswerElement.value.trim().toLowerCase();
 
 
-    if (Answer==correct){
+    if (userAnswer==correct){
         alert("Correct Answer !");
         currentQ++;
         
