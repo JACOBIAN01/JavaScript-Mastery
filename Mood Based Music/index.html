@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Based Music</title>
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #4a90e2;
+        }
+        select {
+            padding: 10px;
+            font-size: 1.2em;
+            border: 2px solid #4a90e2;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+
+        #music {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: white;
+            display: block;
+            background-color:  #357ABD;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+        }
+        audio {
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+    border:#357ABD;
+    height: 40px; 
+    border-radius: 20px;
+}
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            select, button {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>What's your mood today?</h1>
+    <select id="mood">
+        <option value="">Select Your Mood</option>
+        <option value="Happy">Happy</option>
+        <option value="Sad">Sad</option>
+        <option value="Energetic">Energetic</option>
+        <option value="Relaxed">Relaxed</option>
+    </select>
+
+    <button id="music-generate">Generate Music</button>
+
+    <div id="music"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

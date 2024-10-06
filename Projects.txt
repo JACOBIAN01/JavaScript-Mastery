@@ -83,7 +83,7 @@ Project List
 82. Create a real-time chat application using WebSockets.
 83. Build a language translator with an API.
 84. Develop a traffic light simulation.
-85. Create a CSS box shadow generator.
+85. Mood-Based Music Suggestion App
 86. Build a word search puzzle generator.
 87. Create a portfolio with an animated skill bar.
 88. Build a JSON data display tool.
