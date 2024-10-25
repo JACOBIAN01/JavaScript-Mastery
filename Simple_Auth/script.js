@@ -4,7 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSnC71LqrI-E9frAPFMjGpBon1vp_N1_s",
+  apiKey: "",
   authDomain: "sign-in-cc33c.firebaseapp.com",
   projectId: "sign-in-cc33c",
   storageBucket: "sign-in-cc33c.appspot.com",
