@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>L1</title>
+    </head>
+    <body>
+
+        <p id="demo" class="democlass"></p>
+        <div id="container"></div>
+        <div id="c2"></div>
+
+        <div id="A">
+            <p id="B"></p>
+        </div>
+
+        <ul id="list">
+
+        </ul>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello World!";
+
+            let H = document.createElement("h1");
+            H.textContent = "Calling from H1 Tag";
+            document.getElementById("container").appendChild(H);
+
+            let parent = document.getElementById("A");
+            let child = document.getElementById("B");
+            child.textContent='Hi';
+            parent.removeChild(child);
+            parent.appendChild(child);
+
+            let mylist = document.getElementById("list");
+            let fruits = ["Mango","Apple","Banana","Grape"];
+            for(let fruit of fruits){
+                let item = document.createElement("li");
+                item.textContent=fruit;
+                mylist.appendChild(item)
+            }
+
+            
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
