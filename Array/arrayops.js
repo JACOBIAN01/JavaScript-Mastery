@@ -1,3 +1,5 @@
+const { arch } = require("os");
+
 const names = [
   "Aarav",
   "Saanvi",
@@ -40,3 +42,19 @@ console.log(longName)
 let shortName = names.filter(name=>name.length<5)
 console.log(shortName)
 
+// Reduce Method
+array = [1, 2, 3, 4, 5, 6];
+
+const helperSum = (acc,curr) =>acc+curr
+
+sum = array.reduce(helperSum,0)
+console.log(sum)
+
+//Some - It is used to check whether some array values passes a test
+
+array = [1, 2, 3, 4, 5, 6];
+
+const lessthan4Check = (element)=>element>4
+const lessThanFour = array.some(lessthan4Check)
+
+console.log(lessThanFour)
