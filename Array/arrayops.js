@@ -58,3 +58,4 @@ const lessThanFour = array.some(lessthan4Check)
 // console.log(lessThanFour)
 
 
+
