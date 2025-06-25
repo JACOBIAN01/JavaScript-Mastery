@@ -58,4 +58,28 @@ const lessThanFour = array.some(lessthan4Check)
 // console.log(lessThanFour)
 
 
+// Array Copy
+
+// let arr1 =  [1,2,3]
+// // let arr2 = arr1 //Shallow Copy
+
+// arr2.push(4)
+// console.log(arr1)
+// console.log(arr2)
+
+//spread Operator ...
+
+let arr = [1,2,3]
+let arr2 = [...arr]
+arr2.push(4)
+console.log(arr)
+console.log(arr2)
+
+// for (let i of arr){
+//     console.log(i)
+// }
+
+
+
+
 
